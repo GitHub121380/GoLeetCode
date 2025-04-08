@@ -47,9 +47,9 @@ func leet5_1(s string) string {
 	}
 	l := len(s)
 	//初始化dp数组
-	dp := make([][]bool, 0, l)
+	dp := make([][]bool, l)
 	for i := 0; i < l; i++ {
-		dp[i] = make([]bool, 0, l)
+		dp[i] = make([]bool, l)
 	}
 	//先查看长度=1 和 长度=2的
 	for i := 0; i < l; i++ {
